@@ -1,0 +1,1608 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#"
+     xml:base="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bigowl="http://www.khaos.uma.es/perception/bigowl#">
+    <owl:Ontology rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow">
+        <owl:imports rdf:resource="http://www.khaos.uma.es/perception/bigowl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDTClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDTClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DTC"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision Tree Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDataToJSON -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDataToJSON">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data to JSON</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmExportMongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmExportMongoDB">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataSinkAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Export MongoDB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierPredict -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierPredict">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#ClassificationPredictingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Predict</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierTest">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#ClassificationTestingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierPredict -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierPredict">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#ClassificationPredictingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Predict</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierTest">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#ClassificationTestingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportBinAsCSV -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportBinAsCSV">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Bin As CSV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportFile -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportFile">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import file</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportMlModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportMlModel">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import MlModel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTSV -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTSV">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import TSV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTabularDataset -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTabularDataset">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Tabular Dataset</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportZip -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportZip">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataCollectionAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Zip</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmKNNClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmKNNClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#KNN"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmLSTMClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmLSTMClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#ConvNetLSTM"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmMerger -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmMerger">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRFClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRFClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#RF"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RFClassifierTrain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRemoveOutliers -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRemoveOutliers">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remove Outliers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSVCClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSVCClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#SVM"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVC Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitShuffle -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitShuffle">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Shuffle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitStratified -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitStratified">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessingAlgorithm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Stratified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ClassificationReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ClassificationReport">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentDTClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentDTClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDTClassifierTrain"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDTClassifierTrainPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterDTClassifierTrainLabel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelDTC"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision tree classifier training stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision Tree Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentDataToJSON -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentDataToJSON">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataTransform"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmDataToJSON"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDataToJSON"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#InputData"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Json"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convert any input into a JSON Document</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data to JSON</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentExportMongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentExportMongoDB">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataSink"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmExportMongoDB"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationExportMongoDB"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBCollection"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBConnectionUri"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBDatabase"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Json"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exports data into a mongoDB instance given its credentials.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Export MongoDB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericClassifierPredict -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericClassifierPredict">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierPredict"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierPredictPython"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic classifier predict stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Predict</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericClassifierTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericClassifierTest">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericClassifierTest"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierTestPython"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ClassificationReport"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ConfusionMatrix"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Scores"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic classifier test stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericSlidingWindowClassifierPredict -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericSlidingWindowClassifierPredict">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierPredict"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierPredictPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictBatchSize"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictIgnoreColumns"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictStride"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictTimeWindow"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic classifier predict stage for algorithms using a sliding window.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Predict</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericSlidingWindowClassifierTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentGenericSlidingWindowClassifierTest">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmGenericSlidingWindowClassifierTest"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierTestPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestIgnoreColumns"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestStride"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestTimeWindow"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ClassificationReport"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ConfusionMatrix"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Scores"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic classifier test stage for algorithms using a sliding window.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportBinAsCSV -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportBinAsCSV">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportBinAsCSV"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportBinAsCSVPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVDownsample"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVParameters"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVUrl"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a bin file from an online resource given its url and converts it to CSV.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Bin As CSV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportFile -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportFile">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportFile"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportFilePython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileParameters"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileUrl"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TempFile"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a file from an online resource given its url.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import File</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportMlModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportMlModel">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportMlModel"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportMlModel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelParameters"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelUrl"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a machine learning model from an online resource given its url.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import MlModel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportTSV -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportTSV">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTSV"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTSVPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVComment"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVDelimiter"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVUrl"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a tab-separated values file from an online resource given its url.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import TSV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportTabularDataset -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportTabularDataset">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportTabularDataset"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTabularDatasetPython"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a tabular dataset from an online resource given its url.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Tabular Dataset</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportZip -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentImportZip">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataIngestion"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmImportZip"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportZipPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipParameters"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipUrl"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports a dataset from a zip file from an online resource given its url. Every dataset receives a new column with the class</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Zip</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentKNNClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentKNNClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmKNNClassifierTrain"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationKNNClassifierTrainPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainLabel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainNNeighbors"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelKNN"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN classifier training stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentLSTMClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentLSTMClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmLSTMClassifierTrain"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationLSTMClassifierTrainPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainBatchSize"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainEpochs"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainIgnoreColumns"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainLabel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainNNeurons"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainStride"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainTimeWindow"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainVerbose"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelLSTM"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short-Term Memory Recurrent Neural Network training stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentMerger -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentMerger">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#DataProcessing"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmMerger"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationMergerPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerDropJoinColumn"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerJoinLabel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSetB"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merges to datasets into one by column.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentRFClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentRFClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRFClassifierTrain"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRFClassifierTrainPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainLabel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainNEstimators"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelRF"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random forest classifier training stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RF Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentRemoveOutliers -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentRemoveOutliers">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#RemoveOutlier"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmRemoveOutliers"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRemoveOutliersPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersIgnoreColumns"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersLabel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersNPartitions"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersOutlierThreshold"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remove outliers from a tabular dataset based on the Mahalanobis distance.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remove Outliers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSVCClassifierTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSVCClassifierTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#MachineLearning"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSVCClassifierTrain"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSVCClassifierTrainPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSVCClassifierTrainLabel"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelSVC"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support Vector Machine classifier training stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVC Classifier Train</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSplitShuffle -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSplitShuffle">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#SplitShuffle"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitShuffle"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitShufflePython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitShuffleProportion"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTest"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTrain"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horizontal tabular dataset split shuffle.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Shuffle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSplitStratified -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ComponentSplitStratified">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#SplitShuffle"/>
+        <bigowl:hasAlgorithm rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#AlgorithmSplitStratified"/>
+        <bigowl:hasImplementation rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitStratifiedPython"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedLabel"/>
+        <bigowl:hasParameter rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedProportion"/>
+        <bigowl:specifiesInputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTest"/>
+        <bigowl:specifiesOutputClass rdf:resource="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTrain"/>
+        <bigowl:numberOfInputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bigowl:numberOfInputs>
+        <bigowl:numberOfOutputs rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bigowl:numberOfOutputs>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horizontal tabular dataset split shuffle.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Stratified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ConfusionMatrix -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ConfusionMatrix">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDTClassifierTrainPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDTClassifierTrainPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.DTClassifierTrain</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision Tree Classifier Train in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDataToJSON -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationDataToJSON">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.DataToJson</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data to JSON in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationExportMongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationExportMongoDB">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.subscriber.ExportMongoDB</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Export MongoDB in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierPredictPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierPredictPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan,catalog.processor.ml.GenericClassifierPredict</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Predict in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierTestPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericClassifierTestPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.GenericClassifierTest</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Classifier Test in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierPredictPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierPredictPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.GenericSlidingWindowClassifierPredict</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Predict in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierTestPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationGenericSlidingWindowClassifierTestPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.GenericSlidingWindowClassifierTest</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Sliding Window Classifier Test in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportBinAsCSVPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportBinAsCSVPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.publisher.load.ImportBinAsCSV</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Bin As CSV in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportFilePython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportFilePython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama.core.catalog.load.ImportFile</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import file Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportMlModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportMlModel">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.publisher.load.ImportMlModel</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import MlModel in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTSVPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTSVPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama.core.catalog.load.ImportTSV</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import TSV in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTabularDatasetPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportTabularDatasetPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.publisher.load.ImportTabularDataset</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Tabular Dataset in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportZipPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationImportZipPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.publisher.load.ImportZip</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import Zip in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationKNNClassifierTrainPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationKNNClassifierTrainPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.KNNClassifierTrain</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN Classifier Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationLSTMClassifierTrainPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationLSTMClassifierTrainPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.LSTMClassifierTrain</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM Classifier Train in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationMergerPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationMergerPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.df.Merger</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merger in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRFClassifierTrainPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRFClassifierTrainPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.ml.RFClassifierTrain</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RF Classifier Train in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRemoveOutliersPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationRemoveOutliersPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.df.RemoveOutliers</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remove Outliers in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSVCClassifierTrainPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSVCClassifierTrainPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.processor.ml.SVCClassifierTrain</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVC Classifier Train in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitShufflePython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitShufflePython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.df.SplitShuffle</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Shuffle in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitStratifiedPython -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ImplementationSplitStratifiedPython">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Implementation"/>
+        <bigowl:implementationLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</bigowl:implementationLanguage>
+        <bigowl:module rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama_titan.catalog.processor.df.SplitStratified</bigowl:module>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Stratified in Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#InputData -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#InputData">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Json -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Json">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#Json"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelDTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelDTC">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelKNN -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelKNN">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelLSTM -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelLSTM">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelRF -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelRF">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelSVC -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#MlModelSVC">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterDTClassifierTrainLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterDTClassifierTrainLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBCollection -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBCollection">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collection</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection to store the data in.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBConnectionUri -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBConnectionUri">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connectionUri</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URI to connect to a MongoDB instance.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connection uri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBDatabase -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterExportMongoDBDatabase">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database to connect on the MongoDB instance.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictBatchSize -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictBatchSize">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batchSize</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batch size for training. Defaults to 1.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batch size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictIgnoreColumns -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictIgnoreColumns">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[]</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignoreColumns</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of column names to ignore during training. Defaults to [].</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignore columns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictStride -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictStride">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movement of the sliding window. Defaults to 10.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictTimeWindow -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierPredictTimeWindow">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeWindow</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size of the sliding window. Defaults to 1000.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time window</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestIgnoreColumns -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestIgnoreColumns">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[]</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignoreColumns</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of column names to ignore during training. Defaults to [].</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignore columns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestStride -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestStride">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movement of the sliding window. Defaults to 10.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestTimeWindow -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterGenericSlidingWindowClassifierTestTimeWindow">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeWindow</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size of the sliding window. Defaults to 1000.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time window</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVDownsample -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVDownsample">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Float"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downsample</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downsample value for conversion. Between 0.0 and 1.0, with 1 being the same as original. Defaults to &quot;0.4&quot;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downsample</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVParameters -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVParameters">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET parameters to append to url</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportBinAsCSVUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileParameters -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileParameters">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET parameters to append to url</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportFileUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelParameters -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelParameters">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET parameters to append to url</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportMlModelUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVComment -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVComment">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Character representing starting comment. Defaults to &quot;#&quot;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVDelimiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVDelimiter">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\t</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delimiter</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line column delimiter. Defaults to &quot;\t&quot;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delimiter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTSVUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetDelimiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetDelimiter">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">,</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delimiter</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line column delimiter. Defaults to &quot;,&quot;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delimiter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHasHeader -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHasHeader">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Boolean"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasHeader</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whenever the dataset has header line. Defaults to True.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has header</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHeaderNames -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHeaderNames">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">headerNames</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column names. Defaults to None.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header names</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHeaderTypes -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetHeaderTypes">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">headerTypes</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column types. Default to None.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">header types</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetLineDelimiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetLineDelimiter">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lineDelimiter</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line delimiter. Defaults to None.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line delimiter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportTabularDatasetUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipParameters -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipParameters">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET parameters to append to url</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipUrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterImportZipUrl">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public accessible resource</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainNNeighbors -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterKNNClassificationTrainNNeighbors">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nNeighbors</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of neighbors to use. Defaults to -1.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n neighbors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainBatchSize -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainBatchSize">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batchSize</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batch size for training. Defaults to 16.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batch size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainEpochs -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainEpochs">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epochs</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of epochs to train. Defaults to 3.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epochs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainIgnoreColumns -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainIgnoreColumns">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[]</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignoreColumns</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of column names to ignore during training. Defaults to [].</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignore columns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainNNeurons -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainNNeurons">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nNeurons</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of neurons for the hidden layers of the LSTM. Defaults to 50.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainStride -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainStride">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movement of the sliding window. Defaults to 10.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainTimeWindow -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainTimeWindow">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeWindow</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size of the sliding window. Defaults to 1000.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time window</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainVerbose -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterLSTMClassifierTrainVerbose">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verbose</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verbosity of the training. 0 - silent, 1 - progress bar, 2 - number of epoch. Defaults to 2.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verbose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerDropJoinColumn -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerDropJoinColumn">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Boolean"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dropJoinColumn</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whenever drop the joined column. Defaults to True.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drop join column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerJoinLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterMergerJoinLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">class</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joinLabel</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common column name. Defaults to &quot;class&quot;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">join label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainNEstimators -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRFClassifierTrainNEstimators">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nEstimators</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of trees in the forest to use. Defaults to 100.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n estimators</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersIgnoreColumns -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersIgnoreColumns">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#List"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignoreColumns</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Columns to ignore while calculating the Mahalanobis distance. Defaults to None.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ignore columns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersNPartitions -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersNPartitions">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Integer"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nPartitions</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of partitions the dataset is going to be split on. Partitions are executed in parallel. More partitions worse results, but faster compute time.  Defaults to 4.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n partitions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersOutlierThreshold -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterRemoveOutliersOutlierThreshold">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Float"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outlierThreshold</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Percentile of the original dataset to keep. Defaults to 0.7.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outlier threshold</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSVCClassifierTrainLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSVCClassifierTrainLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitShuffleProportion -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitShuffleProportion">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Float"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proportion</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proportion of axis to returns . Defaults to 0.7.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proportion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedLabel -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedLabel">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#String"/>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification column name</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedProportion -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#ParameterSplitStratifiedProportion">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter"/>
+        <bigowl:hasDataType rdf:resource="http://www.khaos.uma.es/perception/bigowl#Float"/>
+        <bigowl:hasDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7</bigowl:hasDefaultValue>
+        <bigowl:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proportion</bigowl:hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proportion of axis to returns . Defaults to 0.7.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proportion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTest">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#STDatasetTrain">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Scores -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#Scores">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSet">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSetB -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TabularDataSetB">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TabularDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TempFile -->
+
+    <owl:NamedIndividual rdf:about="http://www.khaos.uma.es/khaosteam/sensacion/titan-workflow#TempFile">
+        <rdf:type rdf:resource="http://www.khaos.uma.es/perception/bigowl#TempFile"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
